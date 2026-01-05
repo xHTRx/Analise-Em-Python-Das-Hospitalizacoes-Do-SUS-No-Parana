@@ -47,4 +47,5 @@ Este projeto foi otimizado para execução no **Google Colab**, utilizando a int
    ```python
    !pip install dash pandas numpy scikit-learn tensorflow matplotlib seaborn plotly
 ---
+*Nota técnica:* O código utiliza google.colab.output.serve_kernel_port_as_iframe para contornar restrições de porta em ambientes de nuvem.
 *Desenvolvido como parte de estudos em Inteligência Artificial e Análise de Sistemas.*
