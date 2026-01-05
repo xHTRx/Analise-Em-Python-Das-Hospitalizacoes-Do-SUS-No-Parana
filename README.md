@@ -37,18 +37,14 @@ O projeto foi dividido em três etapas principais:
 * **Visualização:** Plotly, Seaborn, Matplotlib
 * **Web App:** Dash
 
-## 🚀 Como Executar
+## 🚀 Como Executar (Google Colab)
 
-1.  Clone este repositório.
-2.  Instale as dependências:
-    ```bash
-    pip install pandas numpy scikit-learn tensorflow matplotlib seaborn dash plotly
-    ```
-3.  Execute o arquivo principal:
-    ```bash
-    python analise_sus_dashboard.py
-    ```
-4.  O dashboard ficará acessível no seu navegador em `http://127.0.0.1:8050/`.
+Este projeto foi otimizado para execução no **Google Colab**, utilizando a integração de IFrame para exibição do Dashboard.
 
+1. Acesse o [Google Colab](https://colab.research.google.com/).
+2. Faça o upload do arquivo `analise_dos_dados_do_sus_em_python.py` ou cole o código em uma célula.
+3. Certifique-se de instalar as dependências necessárias executando em uma célula:
+   ```python
+   !pip install dash pandas numpy scikit-learn tensorflow matplotlib seaborn plotly
 ---
 *Desenvolvido como parte de estudos em Inteligência Artificial e Análise de Sistemas.*
