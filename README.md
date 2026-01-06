@@ -1,51 +1,43 @@
-# Análise de Dados Hospitalares do SUS 🏥
+# Análise de Dados Hospitalares do SUS - Paraná 🏥
 
-Este projeto aplica técnicas de **Data Science** e **Machine Learning** para analisar dados de internações hospitalares (simulados baseados em estrutura do SUS). O objetivo é identificar padrões de custos e prever riscos financeiros para auxiliar na gestão hospitalar.
+Este projeto aplica técnicas avançadas de **Data Science** e **Machine Learning** para analisar dados reais de internações hospitalares do SUS no estado do Paraná. O objetivo é identificar padrões de custos e prever riscos financeiros através de modelos preditivos e prescritivos.
 
-## Bibliotecas Utilizadas
-
-pandas
-numpy
-scikit-learn
-tensorflow
-matplotlib
-seaborn
-dash
-plotly
+> 🚀 **Diferencial:** Este projeto consome os dados automaticamente via Pipeline direta do GitHub, permitindo execução imediata no Google Colab.
 
 ## 🧠 Técnicas Utilizadas
 
-O projeto foi dividido em três etapas principais:
+O projeto percorre o pipeline completo de um Cientista de Dados:
 
-1.  **Pré-processamento:**
-    * Limpeza e normalização de dados (`StandardScaler`).
-    * Engenharia de atributos.
+1. **Pré-processamento e ETL:**
+   * Limpeza e normalização de dados brutos de Excel.
+   * Tratamento de missing values e padronização com `StandardScaler`.
 
-2.  **Aprendizado de Máquina:**
-    * **Clustering (Não Supervisionado):** Segmentação dos hospitais utilizando *K-Means*, *Gaussian Mixture Models (GMM)* e *Hierarchical Clustering*. A escolha do melhor modelo foi baseada no *Silhouette Score*.
-    * **Classificação (Supervisionado):** Comparação de modelos (*Random Forest, KNN, Redes Neurais*) para prever a probabilidade de "Alto Gasto".
+2. **Aprendizado de Máquina (Analytics):**
+   * **Clustering (Não Supervisionado):** Segmentação de entidades utilizando *K-Means*, *Gaussian Mixture Models (GMM)* e *Hierarchical Clustering*. A validação do número ideal de clusters foi feita através do **Silhouette Score** e **Método do Cotovelo (Elbow Method)**.
+   * **Classificação (Supervisionado):** Treinamento e comparação de modelos (*Random Forest, KNN, Redes Neurais*) para prever o risco de "Alto Gasto". Avaliação via Matriz de Confusão e **Curva ROC/AUC**.
 
-3.  **Visualização de Dados:**
-    * Desenvolvimento de um **Dashboard Interativo** utilizando a biblioteca **Dash (Plotly)**.
-    * Gráficos 3D para clusters, Matriz de Confusão e Curva ROC.
+3. **Visualização e BI:**
+   * Desenvolvimento de um **Dashboard Interativo** utilizando **Dash (Plotly)**.
+   * Visualizações complexas como dispersão 3D de clusters e indicadores de performance (KPIs).
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias e Bibliotecas
 
 * **Linguagem:** Python 3.x
-* **Análise de Dados:** Pandas, NumPy
-* **ML & AI:** Scikit-Learn, TensorFlow (Keras)
-* **Visualização:** Plotly, Seaborn, Matplotlib
-* **Web App:** Dash
+* **Data Manipulation:** `Pandas`, `NumPy`
+* **Machine Learning:** `Scikit-Learn`, `TensorFlow/Keras`, `Statsmodels`
+* **Visualização:** `Plotly`, `Seaborn`, `Matplotlib`
+* **Web App:** `Dash`
 
 ## 🚀 Como Executar (Google Colab)
 
-Este projeto foi otimizado para execução no **Google Colab**, utilizando a integração de IFrame para exibição do Dashboard.
+Este projeto foi otimizado para execução no **Google Colab**, utilizando integração de IFrame para renderizar o dashboard.
 
-1. Acesse o [Google Colab](https://colab.research.google.com/).
-2. Faça o upload do arquivo `analise_dos_dados_do_sus_em_python.py` ou cole o código em uma célula.
-3. Certifique-se de instalar as dependências necessárias executando em uma célula:
+1. Acesse o código através do arquivo `.py` ou `.ipynb` neste repositório.
+2. Abra o [Google Colab](https://colab.research.google.com/).
+3. Instale as dependências necessárias executando:
    ```python
    !pip install dash pandas numpy scikit-learn tensorflow matplotlib seaborn plotly
----
-*Nota técnica:* O código utiliza google.colab.output.serve_kernel_port_as_iframe para contornar restrições de porta em ambientes de nuvem.
+4. Execute o código: Os dados serão baixados automaticamente deste repositório e o Dashboard será carregado diretamente na célula de saída.
+
+Desenvolvido por Heitor Augusto Andrade - Analista de Sistemas focado em IA e Dados.
 *Desenvolvido como parte de estudos em Inteligência Artificial e Análise de Sistemas.*
