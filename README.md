@@ -40,4 +40,5 @@ Este projeto foi otimizado para execução no **Google Colab**, utilizando integ
 4. Execute o código: Os dados serão baixados automaticamente deste repositório e o Dashboard será carregado diretamente na célula de saída.
 
 Desenvolvido por Heitor Augusto Andrade - Analista de Sistemas focado em IA e Dados.
+
 *Desenvolvido como parte de estudos em Inteligência Artificial e Análise de Sistemas.*
