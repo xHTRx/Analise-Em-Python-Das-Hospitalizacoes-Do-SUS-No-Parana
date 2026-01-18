@@ -2,7 +2,7 @@
 
 Este projeto aplica técnicas avançadas de **Data Science** e **Machine Learning** para analisar dados reais de internações hospitalares do SUS no estado do Paraná. O objetivo é identificar padrões de custos e prever riscos financeiros através de modelos preditivos e prescritivos.
 
-> 🚀 **Diferencial:** Este projeto consome os dados automaticamente via Pipeline direta do GitHub, permitindo execução imediata no Google Colab.
+> 🚀 Este projeto consome os dados automaticamente via Pipeline direta do GitHub, permitindo execução imediata no Google Colab.
 
 ## 🧠 Técnicas Utilizadas
 
